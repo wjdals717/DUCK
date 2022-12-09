@@ -1,0 +1,338 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".New_Reg">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="16dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="70dp"
+                android:layout_marginBottom="40dp"
+                android:text="신규 회원 정보 입력"
+                android:textSize="24sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp"
+                android:gravity="right"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="18dp"
+                    android:text="이름" />
+
+                <EditText
+                    android:id="@+id/name1"
+                    android:layout_width="220dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="70dp"
+                    android:ems="10"
+                    android:hint="이름을 입력하세요"
+                    android:inputType="textPersonName" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp"
+                android:gravity="right"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="18dp"
+                    android:text="생년월일" />
+
+                <EditText
+                    android:id="@+id/birth"
+                    android:layout_width="220dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="70dp"
+                    android:ems="10"
+                    android:hint="예시) 20001231"
+                    android:inputType="date" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="right"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="10dp"
+                    android:gravity="right"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/textView3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="18dp"
+                        android:text="주소" />
+
+                    <EditText
+                        android:id="@+id/address"
+                        android:layout_width="220dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="70dp"
+                        android:ems="10"
+                        android:hint="상세주소를 입력하세요"
+                        android:inputType="textPostalAddress" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="right"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="18dp"
+                    android:text="연락처" />
+
+                <EditText
+                    android:id="@+id/phone"
+                    android:layout_width="220dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="70dp"
+                    android:ems="10"
+                    android:gravity="center"
+                    android:hint="연락처를 입력하세요"
+                    android:inputType="phone" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp"
+                android:gravity="right"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="18dp"
+                    android:gravity="right"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/textView5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="질환" />
+
+                    <TextView
+                        android:id="@+id/textView6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="(중복체크 가능)" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/linearLayout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="50dp"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        tools:layout_editor_absoluteX="33dp"
+                        tools:layout_editor_absoluteY="602dp">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            tools:layout_editor_absoluteY="444dp">
+
+                            <CheckBox
+                                android:id="@+id/cb1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="고혈압" />
+
+                            <CheckBox
+                                android:id="@+id/cb4"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="관절염" />
+
+                            <CheckBox
+                                android:id="@+id/cb7"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="백내장" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            tools:layout_editor_absoluteX="243dp"
+                            tools:layout_editor_absoluteY="444dp">
+
+                            <CheckBox
+                                android:id="@+id/cb2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="골다공증" />
+
+                            <CheckBox
+                                android:id="@+id/cb5"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="당뇨" />
+
+                            <CheckBox
+                                android:id="@+id/cb8"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="치매" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            tools:layout_editor_absoluteX="316dp"
+                            tools:layout_editor_absoluteY="444dp">
+
+                            <CheckBox
+                                android:id="@+id/cb3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="뇌혈관질환" />
+
+                            <CheckBox
+                                android:id="@+id/cb6"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="심장질환" />
+
+                            <CheckBox
+                                android:id="@+id/cb9"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="퇴행설질환" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <CheckBox
+                            android:id="@+id/cb10"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="기타" />
+
+                        <EditText
+                            android:id="@+id/editTextTextPersonName3"
+                            android:layout_width="160dp"
+                            android:layout_height="wrap_content"
+                            android:ems="10"
+                            android:inputType="textPersonName" />
+                    </LinearLayout>
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp"
+                android:gravity="right"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="18dp"
+                    android:text="보호자 이름" />
+
+                <EditText
+                    android:id="@+id/p_name"
+                    android:layout_width="220dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="70dp"
+                    android:ems="10"
+                    android:hint="보호자 이름을 입력하세요"
+                    android:inputType="textPersonName" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp"
+                android:gravity="right"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="18dp"
+                    android:text="보호자 연락처" />
+
+                <EditText
+                    android:id="@+id/p_phone"
+                    android:layout_width="220dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="70dp"
+                    android:ems="10"
+                    android:hint="보호자 연락처를 입력하세요"
+                    android:inputType="phone" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btn1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:text="등록" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
